@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ScaleWithMe — Next Steps</title>
+<style>
+  :root{
+    --bg:#FFFFFF;--grid:#F0F3F7;--ink:#0C1B2A;--muted:#6C7A8C;--faint:#97A2B2;
+    --line:#E7ECF2;--border:#D8DFEA;--panel:#FBFDFE;
+    --cyan:#12B5CE;--cyan-deep:#0E8FA6;--chip:#E2F6FA;--chip-ink:#0B6072;
+    --sans:system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:44px 44px}
+  .shell{max-width:800px;margin:0 auto;padding:0 20px 64px}
+  header{display:flex;align-items:center;gap:9px;padding:24px 2px 6px;font-family:var(--mono);font-size:13px;letter-spacing:1px;color:var(--muted)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+  h1{font-size:30px;margin:14px 0 16px;letter-spacing:-.4px}
+  h2{font-size:13px;font-family:var(--mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan-deep);margin:36px 0 12px}
+  h3{font-size:11px;font-family:var(--mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--faint);margin:24px 0 8px}
+  p{margin:0 0 13px;font-size:15px}
+  a{color:var(--cyan-deep);word-break:break-word}
+  code{font-family:var(--mono);font-size:12.5px;background:#F1F4F8;border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+  .bluf{background:#F1FBFD;border-left:3px solid var(--cyan);border-radius:0 12px 12px 0;padding:16px 18px;margin:6px 0 8px;font-size:15px}
+  ul{margin:8px 0 0;padding-left:20px}
+  li{font-size:15px;margin:10px 0}
+  li ul{margin:8px 0}li li{font-size:14px;color:#46566B;margin:6px 0}
+  .links li{margin:8px 0}
+  .grp{margin:14px 0}
+  .grp b{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--cyan-deep)}
+  .grp p{margin:5px 0 0;font-size:14px;color:#46566B}
+  .rule{border:none;border-top:1px solid var(--line);margin:34px 0}
+  .tag{font-family:var(--mono);font-size:11px;color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header><span class="dot"></span>scalewithme · internal</header>
+  <h1>ScaleWithMe — Next Steps</h1>
+
+  <p class="bluf"><b>Bottom line:</b> I ran one slice of our thesis end to end — <i>turn each stage of
+    starting a business into a real tool + a live build</i> — taking stage one (defining the customer)
+    all the way to a usable personas deliverable and two working tools (linked below). Treat it as a
+    proof of concept, not a starting point: evidence the model can work, one example among many we
+    could choose. <b>This is the direction we need to set together</b> — who ScaleWithMe is for, how we
+    make money, which workflows come first and who owns each, the funnel, and our first public proof.
+    This isn't a meeting agenda — it's work to think through. Give it a read, react, and send me your
+    thoughts.</p>
+
+  <h2>1 · The approach I tested</h2>
+  <ul>
+    <li><b>The lens:</b> treat <i>starting a business</i> as a series of <b>stages / workflows</b> we can each turn into a real tool + a live build. "Business through technology," made concrete.</li>
+    <li><b>I went deep on stage one — persona / best-fit-customer development</b> — as a proof of concept: can we take one stage and turn it into a genuinely usable workflow and tool?</li>
+    <li><b>What came out:</b> our <b>customer personas</b> (a real, useful input for us), an <b>installable tool</b>, and a <b>live web app</b> — all linked below.</li>
+    <li><b>The use case — top of funnel to a DFY customer, one journey:</b> a non-technical founder (our <i>Vision-First Founder</i>) sees a live-build clip on social → runs the free Avatar Builder web app, answers 5 questions, and gets three ranked personas she can actually use → drops her email to keep them → nurture pulls her to the weekly live-build, where she watches us ship real software on the $0 stack → she joins the <b>membership</b> for the full toolkit + weekly builds → she hits the wall (she wants it <i>built</i>, not to build it herself) → converts to <b>DFY</b>, and we build it for her. Free artifact at the top, a paying custom-build customer at the bottom.</li>
+    <li><b>Two tools, one for each of our first two personas:</b> the <b>plugin</b> (install in Claude Code) fits the technical <b>Stuck Shipper</b>; the <b>no-install web app</b> fits the non-technical <b>Vision-First Founder</b>. One workflow, two front doors — each meets a different avatar where they already are.</li>
+    <li><b>The honest part:</b> this is <b>step one of a long road.</b> Naming, domain, positioning, pricing, launch, delivery, support — <i>lots</i> of workflows still to solve. That's the opportunity, and it's ours to build together.</li>
+    <li><b>Closing the funnel gap:</b> the web tool <b>captures email</b> at the point of use, and the plugin points its users to the same signup through a closing CTA — a free tool 500 people use should be 500 emails on the list. That's just the plumbing. The nurture sequence — which email tool, the comment→DM mechanic, the path to the webinar — is <b>Jens's wheelhouse and his to own.</b></li>
+  </ul>
+
+  <h3>Links (all live)</h3>
+  <ul class="links">
+    <li><b>Personas — full deliverable:</b> <a href="/d-f5da7ab0f7/personas">scalewithme-avatar.pages.dev/…/personas</a></li>
+    <li><b>Persona one-pager (graphic):</b> <a href="/d-f5da7ab0f7/personas.svg">…/personas.svg</a></li>
+    <li><b>Avatar tool — live web app:</b> <a href="https://scalewithme-avatar.pages.dev">scalewithme-avatar.pages.dev</a></li>
+    <li><b>Avatar tool — plugin:</b> <a href="https://github.com/Primetime999/scalewithme-tools">github.com/Primetime999/scalewithme-tools</a><br>
+      → install: <code>/plugin marketplace add Primetime999/scalewithme-tools</code> then <code>/plugin install avatar-builder@scalewithme</code></li>
+  </ul>
+
+  <h2>2 · The real work — shared open questions</h2>
+  <p>These are ours to decide together. I've put a proposal on each — tell me where you land, push back, add what's missing.</p>
+  <ul>
+    <li><b>How do we make money — confirm the model?</b> My proposal: three lines that reinforce each other — <b>membership</b> as the recurring core, the <b>micro-SaaS factory</b> feeding it (free tools → funnel, plus paid micro-apps), and <b>DFY</b> as the high-ticket line. Does this hold as our revenue model?</li>
+    <li><b>Who & why</b> — who is ScaleWithMe really for, and what's the north-star outcome? (react to the personas)</li>
+    <li><b>Which stages/workflows next — and who's drawn to which?</b> (self-select by interest and strength, not top-down — see the menu below)</li>
+    <li><b>Align on the proposed funnel.</b> Does this shape work end to end: free tool → email capture (wired: web form + plugin CTA) → nurture → webinar → membership → DFY? And what's the nurture engine — email tool, sequence, the comment→DM mechanic? Jens runs a proven <i>comment → DM → email</i> engine; his wheelhouse to lead.
+      <ul><li><i>One option worth weighing for the webinar: teach how to <b>use</b> each free tool's output (a live build of the next asset) rather than how to rebuild the tool.</i></li></ul>
+    </li>
+    <li><b>Which new social accounts do we build, and where?</b> The persona work already points the way — each has a prioritized channel map (Stuck Shipper → X + r/ClaudeAI/r/vibecoding; Founder → YouTube + LinkedIn; Owner → industry FB groups + YouTube). Which do we stand up first?</li>
+    <li><b>Build / Sell / Serve — who leads what.</b> My proposal: <b>Jens</b> leads social media + tool building, <b>Jake</b> leads the deeper systems-architecture work, and <b>I</b> run the business side — positioning, funnel, GTM, ops, formation. Each of us leads an area, but we all pitch in where it helps — it's a startup. And each person maintains the tools they build. Does this split feel right?</li>
+    <li><b>Vision & curriculum — Jens and I share it.</b> The northstar — <i>"business through technology"</i> — is Jake's line; for carrying vision + curriculum forward day to day, I propose Jens and I hold it jointly. Agree?</li>
+    <li><b>First public proof</b> — what do we build and show first?</li>
+  </ul>
+
+  <h2>3 · The next 2–3 concrete moves — and who owns each</h2>
+  <p>What we commit to first, once the above lands.</p>
+
+  <h2>4 · How we work together</h2>
+  <p>Cadence, and where we coordinate day to day.</p>
+
+  <hr class="rule">
+
+  <h2>Appendix — a starting menu of workflows we could automate</h2>
+  <p>Not a roadmap. Raw material for the <i>"which workflows next — and who's drawn to which"</i> question: a menu to react to, cut, add to, and claim. Each is a real stage of starting/running a business → a live build + a tool candidate, the same way persona development became one.</p>
+  <p>There's real overlap on the commercial side (marketing, copy, content) between the Build and Sell/Serve items — that seam is the "who owns what" line to settle.</p>
+
+  <div class="grp"><b>Start &amp; define</b><p>best-fit customer / persona <span class="tag">(built)</span> · idea &amp; opportunity validation · competitor teardown — site + social via <code>/watch</code> <span class="tag">(prototyped)</span> · business naming · domain finder</p></div>
+  <div class="grp"><b>Build</b><p>agent teammates ("Claude Code as your [social manager / content strategist / copywriter]") · automation glue (n8n + Claude Code + Cloudflare) · the micro-SaaS factory rig (idea → scaffold → deploy → monetize) · content engine (carousels + vibe-edited video) · skill / plugin builder · second-brain / knowledge ops · landing page / site generation · the MVP itself · brand kit · AI-built-app security review</p></div>
+  <div class="grp"><b>Sell</b><p>positioning one-pager · messaging (feature → outcome) · pricing &amp; packaging · hook / headline / ad-creative generator · channel finder · content repurposing engine · lead capture + funnel wiring · cold outreach / email sequences</p></div>
+  <div class="grp"><b>Serve</b><p>customer interview kit · quote / estimate generator · proposal generator · onboarding flow · support / FAQ assistant · analytics &amp; reporting dashboard · invoicing / admin automation</p></div>
+  <div class="grp"><b>Ops &amp; legal</b><p>formation / state-picker checklist · bookkeeping categorization</p></div>
+
+  <p style="margin-top:18px">The point isn't to build all of these — each is a candidate for <i>"a real tool + a live build,"</i> and we each pull the ones we're drawn to.</p>
+</div>
+</body>
+</html>
