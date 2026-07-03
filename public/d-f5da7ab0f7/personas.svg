@@ -7,10 +7,20 @@
 <text x="70" y="50" font-family="'SF Mono','Menlo',monospace" font-size="19" fill="#0C1B2A" letter-spacing="1">scalewithme</text>
 <text x="48" y="100" font-size="34" font-weight="700" fill="#0C1B2A">Who We Build For</text>
 <text x="48" y="126" font-family="'SF Mono','Menlo',monospace" font-size="13" fill="#7A8798">// three personas, ranked — one growth curve, lead with #1</text>
-<path d="M700,120 C820,116 880,96 980,78 S1150,44 1206,34" fill="none" stroke="#12B5CE" stroke-width="2.5"/>
-<path d="M1190,46 L1210,30 L1199,52 Z" fill="#12B5CE"/>
-<circle cx="700" cy="120" r="4" fill="#12B5CE"/><circle cx="980" cy="78" r="4" fill="#12B5CE"/>
-<text x="1130" y="80" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="14" fill="#0E8FA6" letter-spacing="1">SCALE ↗</text>
+<g stroke-linecap="round" stroke-linejoin="round">
+  <line x1="716" y1="124" x2="1152" y2="124" stroke="#E1E7EF" stroke-width="1.5"/>
+  <g fill="#12B5CE">
+    <rect x="724" y="110" width="40" height="14" rx="3" opacity="0.30"/>
+    <rect x="794" y="100" width="40" height="24" rx="3" opacity="0.42"/>
+    <rect x="864" y="88" width="40" height="36" rx="3" opacity="0.55"/>
+    <rect x="934" y="73" width="40" height="51" rx="3" opacity="0.70"/>
+    <rect x="1004" y="55" width="40" height="69" rx="3" opacity="0.85"/>
+    <rect x="1074" y="40" width="40" height="84" rx="3"/>
+  </g>
+  <polyline points="744,110 814,100 884,88 954,73 1024,55 1094,40 1174,22" fill="none" stroke="#0E8FA6" stroke-width="2.5"/>
+  <path d="M1183,20 L1169,31 L1166,16 Z" fill="#0E8FA6"/>
+</g>
+<text x="1232" y="118" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="14" fill="#0E8FA6" letter-spacing="1">SCALE ↗</text>
 <g transform="translate(40,150)">
   <rect width="384" height="806" rx="10" fill="#FBFDFE" stroke="#16BBD4" stroke-width="1.8"/>
   <rect width="384" height="6" rx="3" fill="#16BBD4"/>
