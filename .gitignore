@@ -1,0 +1,6 @@
+.dev.vars
+*.key
+*.anthropic-key
+node_modules/
+.DS_Store
+.wrangler/

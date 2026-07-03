@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avatar Builder — ScaleWithMe</title>
+<style>
+  :root{
+    --bg:#FFFFFF; --grid:#EEF2F7; --panel:#FBFDFE; --input:#FFFFFF;
+    --ink:#0C1B2A; --muted:#6C7A8C; --faint:#97A2B2; --line:#E7ECF2; --border:#D8DFEA;
+    --cyan:#12B5CE; --cyan-deep:#0E8FA6; --chip:#E2F6FA; --chip-ink:#0B7E92;
+    --sans:system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:40px 40px}
+  .inner{max-width:1080px;margin:0 auto;padding:32px 20px 64px}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:15px;letter-spacing:1px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--cyan)}
+  .tag{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--faint)}
+  h1{font-size:clamp(28px,5vw,42px);font-weight:800;margin:16px 0 6px;letter-spacing:-.5px;text-wrap:balance}
+  .sub{font-family:var(--mono);font-size:13px;color:var(--muted);margin:0 0 20px}
+  .spark{display:block;margin:0 0 22px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:22px}
+  form{display:grid;gap:16px}
+  label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:1.5px;color:var(--cyan-deep);margin-bottom:7px;text-transform:uppercase}
+  .q{font-size:13px;color:var(--muted);font-family:var(--mono);margin:0 0 7px}
+  textarea{width:100%;background:var(--input);border:1px solid var(--border);border-radius:8px;color:var(--ink);
+    font-family:var(--sans);font-size:14.5px;padding:11px 13px;resize:vertical;min-height:52px}
+  textarea:focus{outline:2px solid var(--cyan);outline-offset:1px;border-color:var(--cyan)}
+  .go{margin-top:4px;background:var(--cyan);color:#04222a;border:none;border-radius:9px;padding:14px 20px;
+    font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.5px;cursor:pointer;transition:filter .15s}
+  .go:hover{filter:brightness(1.05)}
+  .go:disabled{opacity:.5;cursor:progress}
+  .note{font-family:var(--mono);font-size:11.5px;color:var(--faint);margin-top:10px}
+  .status{font-family:var(--mono);font-size:13px;color:var(--cyan-deep);margin:22px 2px;display:none}
+  .status.show{display:block}
+  .err{color:#c0392b}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+  @media(max-width:840px){.grid{grid-template-columns:1fr}}
+  .p{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;overflow:hidden}
+  .p.primary{border-color:var(--cyan)}
+  .p .bar{position:absolute;top:0;left:0;right:0;height:5px;background:#E1E7EF}
+  .p.primary .bar{background:var(--cyan)}
+  .rank{font-family:var(--mono);font-size:11.5px;letter-spacing:2px;color:var(--faint)}
+  .p.primary .rank{color:var(--cyan-deep)}
+  .name{font-size:20px;font-weight:700;margin:8px 0 2px}
+  .role{font-size:13px;color:var(--muted)}
+  .p hr{border:none;border-top:1px solid var(--line);margin:14px 0}
+  .sec{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--faint);margin:14px 0 5px;text-transform:uppercase}
+  .val{font-size:13px;color:#37455A;line-height:1.5}
+  .q-quote{font-style:italic;color:#6B7789;font-size:12.5px}
+  .lead{color:var(--cyan-deep);font-size:13px}
+  .serve{margin-top:14px;font-family:var(--mono);font-size:12px;background:#EFF3F8;border-radius:7px;padding:9px 12px;color:var(--muted)}
+  .p.primary .serve{background:var(--chip);color:var(--chip-ink)}
+  .summary{margin-top:18px;border-left:3px solid var(--cyan);background:#F1FBFD;border-radius:0 10px 10px 0;padding:16px 18px}
+  .summary h3{margin:0 0 6px;font-size:15px}
+  .summary p{margin:0;font-size:13.5px;color:#37455A;line-height:1.55}
+  .foot{font-family:var(--mono);font-size:11.5px;color:var(--faint);margin-top:30px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+</style>
+</head>
+<body>
+<div class="inner">
+  <div class="top">
+    <div class="brand"><span class="dot"></span>scalewithme</div>
+    <div class="tag">ENTERPRISE AI. STARTUP COSTS.</div>
+  </div>
+  <h1>Avatar Builder</h1>
+  <p class="sub">// answer 5 questions → three ranked customer personas, and who to lead with</p>
+  <svg class="spark" width="260" height="40" viewBox="0 0 260 40" aria-hidden="true">
+    <path d="M4,34 C60,32 90,22 140,15 S220,5 250,4" fill="none" stroke="#12B5CE" stroke-width="2.5"/>
+    <path d="M238,8 L254,2 L246,14 Z" fill="#12B5CE"/>
+    <text x="150" y="34" font-family="ui-monospace,monospace" font-size="12" fill="#0E8FA6" letter-spacing="1">SCALE ↗</text>
+  </svg>
+
+  <div class="card">
+    <form id="f">
+      <div><label>01 · The product</label><p class="q">What did you build (or want to build)? One sentence.</p><textarea id="q1" required placeholder="e.g. A tool that turns dog-groomer no-shows into automatic rebookings"></textarea></div>
+      <div><label>02 · Who lit up</label><p class="q">Who have you seen get the most value — who lit up using it?</p><textarea id="q2" placeholder="A specific real person, if you can"></textarea></div>
+      <div><label>03 · The problem</label><p class="q">What painful, expensive, or recurring problem does it kill for them?</p><textarea id="q3" required></textarea></div>
+      <div><label>04 · Today instead</label><p class="q">What are they doing today instead — a tool, a hack, a person, or nothing?</p><textarea id="q4"></textarea></div>
+      <div><label>05 · Their words</label><p class="q">In their own words, how do they describe the problem? (real quotes if any)</p><textarea id="q5"></textarea></div>
+      <button class="go" id="go" type="submit">Build my 3 avatars →</button>
+      <p class="note">Narrow beats broad — a good avatar excludes people on purpose.</p>
+    </form>
+  </div>
+
+  <div class="status" id="status"></div>
+  <div class="grid" id="out"></div>
+  <div id="summarywrap"></div>
+
+  <div class="foot">
+    <span>// one funnel doesn’t fit all three — build the tech, then sell it</span>
+    <span style="color:#0E8FA6">scalewithme ↗</span>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+$('f').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const body={q1:$('q1').value.trim(),q2:$('q2').value.trim(),q3:$('q3').value.trim(),q4:$('q4').value.trim(),q5:$('q5').value.trim()};
+  if(!body.q1||!body.q3)return;
+  $('go').disabled=true;
+  const st=$('status');st.className='status show';st.classList.remove('err');
+  st.textContent='> mapping segments… drafting three avatars… ranking them…';
+  $('out').innerHTML='';$('summarywrap').innerHTML='';
+  try{
+    const r=await fetch('/api/generate',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
+    if(!r.ok)throw new Error('server '+r.status);
+    const data=await r.json();
+    render(data);st.className='status';
+  }catch(err){
+    st.className='status show err';st.textContent='> could not generate ('+err.message+'). Try again in a moment.';
+  }finally{$('go').disabled=false;}
+});
+function render(d){
+  const out=$('out');
+  (d.avatars||[]).forEach(p=>{
+    const primary=(p.rank||'').toUpperCase()==='PRIMARY';
+    const lang=(p.language||[]).map(q=>`<div class="q-quote">“${esc(q)}”</div>`).join('');
+    out.insertAdjacentHTML('beforeend',`
+    <div class="p ${primary?'primary':''}"><div class="bar"></div>
+      <div class="rank">▲ ${esc(p.rank||'')}</div>
+      <div class="name">${esc(p.name||'')}</div>
+      <div class="role">${esc(p.role||'')}</div><hr>
+      <div class="sec">Snapshot</div><div class="val">${esc(p.snapshot||'')}</div>
+      <div class="sec">Jobs to be done</div><div class="val">Functional — ${esc(p.jtbd&&p.jtbd.functional)}<br>Emotional — ${esc(p.jtbd&&p.jtbd.emotional)}<br>Social — ${esc(p.jtbd&&p.jtbd.social)}</div>
+      <div class="sec">Acute problem</div><div class="val">${esc(p.acute||'')}</div>
+      <div class="sec">Current alternative</div><div class="val">${esc(p.alternative||'')}</div>
+      <div class="sec">Their language</div>${lang}
+      <div class="sec">Channels</div><div class="val"><span class="lead">▸ Lead: ${esc(p.channelLead||'')}</span><br>Hidden gems: ${esc(p.channelGems||'')}</div>
+      <div class="sec">Anti-fit</div><div class="val">${esc(p.antiFit||'')}</div>
+      <div class="sec">Riskiest assumption</div><div class="val">${esc(p.riskiest||'')}</div>
+      <div class="sec">The 3 moves</div><div class="val">Msg — ${esc(p.moves&&p.moves.message)}<br>Channel — ${esc(p.moves&&p.moves.channel)}<br>Offer — ${esc(p.moves&&p.moves.offer)}</div>
+      <div class="serve">SERVE VIA ▸ ${esc(p.serveVia||'')} ↗</div>
+    </div>`);
+  });
+  if(d.leadWith)$('summarywrap').innerHTML=`<div class="summary"><h3>Who to lead with</h3><p>${esc(d.leadWith)}</p></div>`;
+}
+</script>
+</body>
+</html>
