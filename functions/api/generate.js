@@ -1,7 +1,7 @@
 // Cloudflare Pages Function — POST /api/generate
 // Calls the Anthropic Messages API with tool-use to force a valid structured result.
 
-const MODEL = "claude-sonnet-5";
+const MODEL = "claude-haiku-4-5-20251001";
 
 const AVATAR_ITEM = {
   type: "object",
@@ -43,6 +43,8 @@ export async function onRequestPost({ request, env }) {
 
   const userMsg = `Build three distinct, prioritized customer avatars for this product. Make them genuinely different people (different jobs/contexts), narrow and specific — never "everyone". Treat every field as a hypothesis to validate. Then call emit_avatars with exactly three avatars ranked PRIMARY, SECONDARY, TERTIARY (in that order), plus a "leadWith" paragraph on which to lead with and why.
 
+Keep every field to 1–2 concise sentences; "language" ≤ 3 phrases. Be sharp, not verbose.
+
 INPUTS
 - Product: ${a.q1}
 - Who lit up: ${a.q2 || "(not given — infer)"}
@@ -57,7 +59,7 @@ INPUTS
       headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({
         model: MODEL,
-        max_tokens: 4096,
+        max_tokens: 6000,
         tools: [{
           name: "emit_avatars",
           description: "Return the three prioritized customer avatars.",
@@ -81,5 +83,13 @@ INPUTS
   const data = await resp.json();
   const tu = (data.content || []).find((c) => c.type === "tool_use");
   if (!tu || !tu.input) return json({ error: "No structured result", stop: data.stop_reason }, 502);
-  return json(tu.input);
+
+  const out = tu.input;
+  // Backstop: if a field came back as a JSON string (truncation/serialization), reparse.
+  if (typeof out.avatars === "string") { try { out.avatars = JSON.parse(out.avatars); } catch {} }
+  if (!Array.isArray(out.avatars) || out.avatars.length === 0) {
+    return json({ error: "The model's answer got cut off — please try again.", stop: data.stop_reason }, 502);
+  }
+  if (typeof out.leadWith !== "string") out.leadWith = "";
+  return json(out);
 }
