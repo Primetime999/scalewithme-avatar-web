@@ -1,0 +1,20 @@
+name: Deploy to Cloudflare Pages
+# Redeploys the app on every push to main.
+# Requires two repo secrets (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN  — a token with "Cloudflare Pages: Edit" permission (Jedrock account)
+#   CLOUDFLARE_ACCOUNT_ID — e14433887ee3f4078ca73d1527227e73  (Jedrock)
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name scalewithme-avatar --branch main
