@@ -17,4 +17,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: e14433887ee3f4078ca73d1527227e73
-          command: pages deploy public --project-name scalewithme-avatar --branch main
+          command: pages deploy --branch main

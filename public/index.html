@@ -56,6 +56,14 @@
   .dlbtn{align-self:flex-start;margin:2px 0 6px;background:#fff;color:var(--cyan-deep);border:1px solid var(--cyan);
     border-radius:9px;padding:9px 14px;font-family:var(--mono);font-size:12.5px;cursor:pointer;transition:background .15s}
   .dlbtn:hover{background:var(--chip)}
+  .capture{background:#F1FBFD;border:1px solid var(--cyan);border-radius:12px;padding:16px 18px;margin:8px 0 2px;animation:rise .3s ease both}
+  .capture b{font-size:15px}.capture p{margin:5px 0 11px;font-size:13px;color:var(--muted)}
+  .capform{display:flex;gap:8px;flex-wrap:wrap}
+  .capform input{flex:1;min-width:180px;background:#fff;border:1px solid var(--border);border-radius:9px;padding:11px 13px;font-size:14.5px;font-family:var(--sans)}
+  .capform input:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
+  .capform button{background:var(--cyan);color:#04222a;border:none;border-radius:9px;padding:11px 16px;font-family:var(--mono);font-size:13px;font-weight:700;cursor:pointer}
+  .capform button:disabled{opacity:.5}
+  .capmsg{margin-top:8px;font-family:var(--mono);font-size:12.5px}.capok{color:var(--cyan-deep)}
 </style>
 </head>
 <body>
@@ -142,8 +150,27 @@ function renderResults(d){
       <div class="sec">The 3 moves</div><div class="val">Msg — ${esc(p.moves&&p.moves.message)}<br>Channel — ${esc(p.moves&&p.moves.channel)}<br>Offer — ${esc(p.moves&&p.moves.offer)}</div>
       <div class="serve">SERVE VIA ▸ ${esc(p.serveVia||"")} ↗</div></div>`);
   });
+  const cap=document.createElement("div");cap.className="capture";
+  cap.innerHTML=`<b>Keep these + get the next tool</b>
+    <p>Drop your email — I'll send the overview and ping you when the next free workflow tool drops. No spam.</p>
+    <form class="capform"><input type="email" placeholder="you@email.com" required aria-label="Email"><button type="submit">Email it to me →</button></form>
+    <div class="capmsg"></div>`;
+  chat.appendChild(cap);
   const dl=document.createElement("button");dl.className="dlbtn";dl.type="button";
-  dl.textContent="↓ Download overview (.md)";dl.onclick=()=>downloadMd(d);chat.appendChild(dl);
+  dl.textContent="↓ Or just download it (.md)";dl.onclick=()=>downloadMd(d);chat.appendChild(dl);
+  cap.querySelector(".capform").addEventListener("submit",async e=>{
+    e.preventDefault();
+    const btn=cap.querySelector("button"),msg=cap.querySelector(".capmsg"),email=cap.querySelector("input").value.trim();
+    btn.disabled=true;msg.textContent="";
+    try{
+      const r=await fetch("/api/subscribe",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({email,product:answers[0]||""})});
+      const j=await r.json();
+      if(!r.ok||j.error)throw new Error(j.error||("server "+r.status));
+      cap.querySelector(".capform").style.display="none";
+      msg.innerHTML='<span class="capok">✓ You’re on the list — downloading your overview…</span>';
+      downloadMd(d);
+    }catch(err){msg.innerHTML='<span class="err">'+esc(err.message)+'</span>';btn.disabled=false;}
+  });
   scroll();
 }
 function downloadMd(d){

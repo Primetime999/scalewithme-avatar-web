@@ -1,0 +1,13 @@
+name = "scalewithme-avatar"
+pages_build_output_dir = "public"
+compatibility_date = "2024-11-01"
+
+# For Pages, deployed envs need bindings under env.production / env.preview
+# (a top-level binding only applies to local dev).
+[[env.production.kv_namespaces]]
+binding = "EMAILS"
+id = "9ad6bcc3f450400680d51adeecca9dfe"
+
+[[env.preview.kv_namespaces]]
+binding = "EMAILS"
+id = "9ad6bcc3f450400680d51adeecca9dfe"
