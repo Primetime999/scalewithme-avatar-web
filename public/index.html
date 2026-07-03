@@ -53,6 +53,9 @@
   .summary{border-left:3px solid var(--cyan);background:#F1FBFD;border-radius:0 10px 10px 0;padding:15px 17px;margin:6px 0}
   .summary h3{margin:0 0 5px;font-size:15px}.summary p{margin:0;font-size:14px;color:#37455A;line-height:1.55}
   .err{color:#c0392b;font-family:var(--mono);font-size:13px}
+  .dlbtn{align-self:flex-start;margin:2px 0 6px;background:#fff;color:var(--cyan-deep);border:1px solid var(--cyan);
+    border-radius:9px;padding:9px 14px;font-family:var(--mono);font-size:12.5px;cursor:pointer;transition:background .15s}
+  .dlbtn:hover{background:var(--chip)}
 </style>
 </head>
 <body>
@@ -139,7 +142,28 @@ function renderResults(d){
       <div class="sec">The 3 moves</div><div class="val">Msg — ${esc(p.moves&&p.moves.message)}<br>Channel — ${esc(p.moves&&p.moves.channel)}<br>Offer — ${esc(p.moves&&p.moves.offer)}</div>
       <div class="serve">SERVE VIA ▸ ${esc(p.serveVia||"")} ↗</div></div>`);
   });
+  const dl=document.createElement("button");dl.className="dlbtn";dl.type="button";
+  dl.textContent="↓ Download overview (.md)";dl.onclick=()=>downloadMd(d);chat.appendChild(dl);
   scroll();
+}
+function downloadMd(d){
+  const av=d.avatars||[];
+  const brief=av.map((p,i)=>`${i+1}. **${p.rank} — ${p.name}** — ${p.role}. → *${p.serveVia||""}*`).join("\n");
+  const detail=av.map(p=>`### ${p.rank} — ${p.name}\n_${p.role}_\n
+- **Snapshot:** ${p.snapshot||""}
+- **Jobs to be done:** functional — ${p.jtbd&&p.jtbd.functional}; emotional — ${p.jtbd&&p.jtbd.emotional}; social — ${p.jtbd&&p.jtbd.social}
+- **Acute problem:** ${p.acute||""}
+- **Current alternative:** ${p.alternative||""}
+- **Their language:** ${(p.language||[]).map(q=>`"${q}"`).join(" · ")}
+- **Channels:** lead — ${p.channelLead||""}; hidden gems — ${p.channelGems||""}
+- **Anti-fit:** ${p.antiFit||""}
+- **Riskiest assumption:** ${p.riskiest||""}
+- **3 moves:** message — ${p.moves&&p.moves.message}; channel — ${p.moves&&p.moves.channel}; offer — ${p.moves&&p.moves.offer}
+- **Serve via:** ${p.serveVia||""}`).join("\n\n");
+  const md=`# Customer Personas\n\n${d.leadWith?`**Who to lead with:** ${d.leadWith}\n\n`:""}## The three, in brief\n${brief}\n\n## Details\n${detail}\n\n---\n_Built with the ScaleWithMe Avatar Builder — scalewithme-avatar.pages.dev_\n`;
+  const blob=new Blob([md],{type:"text/markdown"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="personas.md";a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 start();
 </script>
