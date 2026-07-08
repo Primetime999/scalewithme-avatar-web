@@ -64,9 +64,12 @@
   <p class="lede">Four distinct best-fit customers, ranked. Lead with the Primary; serve the others through
     different products, not the same funnel. Click any name for the full dossier.</p>
 
-  <div class="card svgwrap" style="text-align:center;padding:26px 22px">
-    <a href="/d-f5da7ab0f7/personas-onepager" style="display:inline-block;font-family:var(--mono);font-size:15px;font-weight:600;text-decoration:none;color:var(--cyan-deep)">↗ Open the 4-persona one-pager</a>
-    <div class="svgcap" style="justify-content:center;margin-top:8px"><span>Interactive on-brand overview — all four ranked personas on one page</span></div>
+  <div class="card svgwrap">
+    <img src="/d-f5da7ab0f7/personas.svg?v=3" alt="ScaleWithMe — four ranked customer personas, one-page overview">
+    <div class="svgcap">
+      <span>One-page visual · all four ranked personas</span>
+      <a href="/d-f5da7ab0f7/personas.svg" download>↓ download SVG</a>
+    </div>
   </div>
 
   <h2>The four, ranked</h2>
@@ -153,6 +156,22 @@
       program; the Shipper feeds the membership; the Owner feeds the tool/SMB line; the Founder can go either way.
       Validate willingness-to-pay for each before committing.</p>
   </div>
+
+  <h2>Market sizing — TAM / SAM / SOM</h2>
+  <p style="color:var(--muted);font-size:13.5px;margin:0 0 12px;max-width:70ch">Rough US planning assumptions — illustrative, not researched figures. ARPU assumption ~$1.5K/yr blended; <b>SOM = year-1 obtainable ARR</b> (the right capture metric for a recurring membership); TAM/SAM are population reach.</p>
+  <div class="card" style="padding:6px 10px;overflow-x:auto">
+    <table class="scoretbl">
+      <thead><tr><th>Persona</th><th>TAM (US pool)</th><th>SAM (reachable)</th><th>SOM yr-1 (ARR)</th></tr></thead>
+      <tbody>
+        <tr><td><b>AI-Displaced Professional</b> (Primary)</td><td>~1M/yr displaced knowledge workers</td><td>~150K — LinkedIn + r/layoffs</td><td class="hi">~1,000 → ~$1.5M</td></tr>
+        <tr><td><b>Stuck Shipper</b> (Secondary)</td><td>~2M solo / technical builders</td><td>~250K — Claude-native</td><td>~800 → ~$1.1M</td></tr>
+        <tr><td><b>Vision-First Founder</b> (Tertiary)</td><td>~3M aspiring non-tech founders</td><td>~150K high-intent</td><td>~400 (guided/DFY) → ~$1–2M</td></tr>
+        <tr><td><b>AI-Curious Owner</b> (Quaternary)</td><td>~33M US SMBs</td><td>~2M per-vertical</td><td>à-la-carte → ~$0.5–1M</td></tr>
+        <tr><td><b>Cumulative</b> (overlap-adjusted)</td><td class="hi">~38M</td><td class="hi">~2.2M</td><td class="hi">~$4–5M ARR</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color:var(--muted);font-size:13.5px;margin:12px 0 0;max-width:70ch"><b>Overlap:</b> not additive — the technical AI-displaced worker <i>is</i> the Stuck Shipper; some Founders are also displaced/owners. The cumulative row strips the double-counting. <b>Caveat:</b> order-of-magnitude assumptions to validate with real conversion data.</p>
 
   <div class="foot">ScaleWithMe · <a href="/">build your own avatars →</a></div>
 </div>

@@ -1,143 +1,106 @@
-<svg viewBox="0 0 1280 1004" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif" role="img">
-<title>ScaleWithMe — three prioritized customer personas, full dossiers</title>
-<desc>Light-theme dossiers for three ranked personas: Stuck Shipper (membership), Vision-First Founder (guided build/DFY), AI-Curious Owner (a-la-carte tools).</desc>
-<defs><pattern id="gl2" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#EEF2F7" stroke-width="1"/></pattern></defs>
-<rect width="1280" height="1004" fill="#FFFFFF"/><rect width="1280" height="1004" fill="url(#gl2)"/>
-<circle cx="52" cy="44" r="7" fill="#12B5CE"/>
-<text x="70" y="50" font-family="'SF Mono','Menlo',monospace" font-size="19" fill="#0C1B2A" letter-spacing="1">scalewithme</text>
-<text x="48" y="100" font-size="34" font-weight="700" fill="#0C1B2A">Who We Build For</text>
-<text x="48" y="126" font-family="'SF Mono','Menlo',monospace" font-size="13" fill="#7A8798">// three personas, ranked — one growth curve, lead with #1</text>
+<svg viewBox="0 0 1680 720" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" role="img">
+<title>ScaleWithMe — four prioritized customer personas</title>
+<desc>Four ranked personas: AI-Displaced Professional (primary), Stuck Shipper, Vision-First Founder, AI-Curious Owner.</desc>
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#EEF2F7" stroke-width="1"/></pattern></defs>
+<rect width="1680" height="720" fill="#FFFFFF"/><rect width="1680" height="720" fill="url(#g)"/>
+<circle cx="52" cy="42" r="7" fill="#12B5CE"/>
+<text x="70" y="48" font-family="'SF Mono','Menlo',monospace" font-size="19" fill="#0C1B2A" letter-spacing="1">scalewithme</text>
+<text x="40" y="100" font-size="34" font-weight="700" fill="#0C1B2A">Who We Build For</text>
+<text x="40" y="126" font-family="'SF Mono','Menlo',monospace" font-size="13" fill="#7A8798">// four best-fit customers, ranked — lead with #1</text>
 <g stroke-linecap="round" stroke-linejoin="round">
-  <line x1="716" y1="124" x2="1152" y2="124" stroke="#E1E7EF" stroke-width="1.5"/>
-  <g fill="#12B5CE">
-    <rect x="724" y="110" width="40" height="14" rx="3" opacity="0.30"/>
-    <rect x="794" y="100" width="40" height="24" rx="3" opacity="0.42"/>
-    <rect x="864" y="88" width="40" height="36" rx="3" opacity="0.55"/>
-    <rect x="934" y="73" width="40" height="51" rx="3" opacity="0.70"/>
-    <rect x="1004" y="55" width="40" height="69" rx="3" opacity="0.85"/>
-    <rect x="1074" y="40" width="40" height="84" rx="3"/>
-  </g>
-  <polyline points="744,110 814,100 884,88 954,73 1024,55 1094,40 1174,22" fill="none" stroke="#0E8FA6" stroke-width="2.5"/>
-  <path d="M1183,20 L1169,31 L1166,16 Z" fill="#0E8FA6"/>
+<line x1="1300" y1="120" x2="1600" y2="120" stroke="#E1E7EF" stroke-width="1.5"/>
+<g fill="#12B5CE">
+<rect x="1308" y="104" width="34" height="14" rx="3" opacity="0.3"/>
+<rect x="1362" y="94" width="34" height="24" rx="3" opacity="0.42"/>
+<rect x="1416" y="82" width="34" height="36" rx="3" opacity="0.55"/>
+<rect x="1470" y="64" width="34" height="54" rx="3" opacity="0.7"/>
+<rect x="1524" y="44" width="34" height="76" rx="3" opacity="0.85"/>
+<rect x="1578" y="26" width="34" height="94" rx="3"/>
 </g>
-<text x="1232" y="118" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="14" fill="#0E8FA6" letter-spacing="1">SCALE ↗</text>
-<g transform="translate(40,150)">
-  <rect width="384" height="806" rx="10" fill="#FBFDFE" stroke="#16BBD4" stroke-width="1.8"/>
-  <rect width="384" height="6" rx="3" fill="#16BBD4"/>
-  <text x="22" y="38" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#0E8FA6" letter-spacing="2">▲ 01 · PRIMARY</text>
-  <text x="22" y="74" font-size="22" font-weight="700" fill="#0C1B2A">Shipping Sam, 32</text>
-  <text x="22" y="98" font-size="13" fill="#6C7A8C">Technical builder who can’t sell</text>
-  <line x1="22" y1="114" x2="362" y2="114" stroke="#E7ECF2"/>
-  <text x="22" y="140" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
-  <text x="22" y="159" font-size="12.5" fill="#37455A">Self-taught full-stack dev; ships a micro-SaaS</text>
-  <text x="22" y="176" font-size="12.5" fill="#37455A">at night. Partnered, dual-income runway.</text>
-  <text x="22" y="193" font-size="12.5" fill="#37455A">High tech comfort, low marketing comfort.</text>
-  <text x="22" y="223" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
-  <text x="22" y="242" font-size="12.5" fill="#37455A">Functional — first 10 paying customers</text>
-  <text x="22" y="259" font-size="12.5" fill="#37455A">Emotional — feel legitimate, not a hobbyist</text>
-  <text x="22" y="276" font-size="12.5" fill="#37455A">Social — post a revenue screenshot</text>
-  <text x="22" y="306" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
-  <text x="22" y="325" font-size="12.5" fill="#37455A">Shipped a working product, got crickets —</text>
-  <text x="22" y="342" font-size="12.5" fill="#37455A">and he knows more features won’t fix it.</text>
-  <text x="22" y="372" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CURRENT ALTERNATIVE</text>
-  <text x="22" y="391" font-size="12.5" fill="#37455A">Builds more features; scrapes generic</text>
-  <text x="22" y="408" font-size="12.5" fill="#37455A">‘marketing-for-devs’ tips. No foundation.</text>
-  <text x="22" y="438" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">THEIR LANGUAGE</text>
-  <text x="22" y="457" font-size="12.5" font-style="italic" fill="#6B7789">“I can build anything but I can’t sell it.”</text>
-  <text x="22" y="474" font-size="12.5" font-style="italic" fill="#6B7789">“Build it and they will come… they didn’t.”</text>
-  <text x="22" y="504" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
-  <text x="22" y="523" font-size="12.5" fill="#0E8FA6">▸ Lead: X #buildinpublic</text>
-  <text x="22" y="540" font-size="12.5" fill="#37455A">Hidden gems: r/ClaudeAI · r/vibecoding</text>
-  <text x="22" y="570" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ANTI-FIT</text>
-  <text x="22" y="589" font-size="12.5" fill="#37455A">Non-technical founders · hobbyists · enterprise</text>
-  <text x="22" y="619" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">RISKIEST ASSUMPTION</text>
-  <text x="22" y="638" font-size="12.5" fill="#37455A">Will he PAY to learn selling? (builders are</text>
-  <text x="22" y="655" font-size="12.5" fill="#37455A">cheap) — test with 5–10 interviews.</text>
-  <text x="22" y="685" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">THE 3 MOVES</text>
-  <text x="22" y="704" font-size="12.5" fill="#37455A">Msg — “you can build; here’s the missing half”</text>
-  <text x="22" y="721" font-size="12.5" fill="#37455A">Channel — X + r/ClaudeAI, live-build proof</text>
-  <text x="22" y="738" font-size="12.5" fill="#37455A">Offer — free tools → membership</text>
-  <rect x="22" y="756" width="340" height="34" rx="7" fill="#E2F6FA"/>
-  <text x="36" y="778" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#0B7E92">SERVE VIA ▸ Membership ↗</text>
+<polyline points="1325,104 1379,94 1433,82 1487,64 1541,44 1595,26 1630,8" fill="none" stroke="#0E8FA6" stroke-width="2.5"/>
+<path d="M1639,6 L1625,16 L1622,1 Z" fill="#0E8FA6"/>
 </g>
-<g transform="translate(448,150)">
-  <rect width="384" height="806" rx="10" fill="#FBFDFE" stroke="#E1E7EF" stroke-width="1.5"/>
-  <rect width="384" height="6" rx="3" fill="#C6CFDB"/>
-  <text x="22" y="38" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#8A97A8" letter-spacing="2">▲ 02 · SECONDARY</text>
-  <text x="22" y="74" font-size="22" font-weight="700" fill="#0C1B2A">Founder Priya, 41</text>
-  <text x="22" y="98" font-size="13" fill="#6C7A8C">Non-technical, validated idea + budget</text>
-  <line x1="22" y1="114" x2="362" y2="114" stroke="#E7ECF2"/>
-  <text x="22" y="140" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
-  <text x="22" y="159" font-size="12.5" fill="#37455A">Ex-consultant / agency owner with domain</text>
-  <text x="22" y="176" font-size="12.5" fill="#37455A">expertise. Has real budget, will pay.</text>
-  <text x="22" y="193" font-size="12.5" fill="#37455A">Low tech comfort, high commercial comfort.</text>
-  <text x="22" y="223" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
-  <text x="22" y="242" font-size="12.5" fill="#37455A">Functional — turn the idea into a product</text>
-  <text x="22" y="259" font-size="12.5" fill="#37455A">Emotional — feel capable, not dependent</text>
-  <text x="22" y="276" font-size="12.5" fill="#37455A">Social — be a founder who builds</text>
-  <text x="22" y="306" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
-  <text x="22" y="325" font-size="12.5" fill="#37455A">Has the idea and the budget, but every route</text>
-  <text x="22" y="342" font-size="12.5" fill="#37455A">to ‘built’ is costly, slow, or a trust leap.</text>
-  <text x="22" y="372" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CURRENT ALTERNATIVE</text>
-  <text x="22" y="391" font-size="12.5" fill="#37455A">Agencies/freelancers ($20–50k, ghosting);</text>
-  <text x="22" y="408" font-size="12.5" fill="#37455A">no-code she outgrows; no tech co-founder.</text>
-  <text x="22" y="438" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">THEIR LANGUAGE</text>
-  <text x="22" y="457" font-size="12.5" font-style="italic" fill="#6B7789">“I have the idea — I just can’t build it.”</text>
-  <text x="22" y="474" font-size="12.5" font-style="italic" fill="#6B7789">“Can’t AI just build this now?”</text>
-  <text x="22" y="504" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
-  <text x="22" y="523" font-size="12.5" fill="#0E8FA6">▸ Lead: YouTube (high-intent) + LinkedIn</text>
-  <text x="22" y="540" font-size="12.5" fill="#37455A">Hidden gems: no-code / AI-build creators</text>
-  <text x="22" y="570" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ANTI-FIT</text>
-  <text x="22" y="589" font-size="12.5" fill="#37455A">Technical builders · no budget · agency hand-off</text>
-  <text x="22" y="619" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">RISKIEST ASSUMPTION</text>
-  <text x="22" y="638" font-size="12.5" fill="#37455A">Learn-to-build, or buy-a-build (DFY)? Offer</text>
-  <text x="22" y="655" font-size="12.5" fill="#37455A">both to 5–10 and see which they pick.</text>
-  <text x="22" y="685" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">THE 3 MOVES</text>
-  <text x="22" y="704" font-size="12.5" fill="#37455A">Msg — “no co-founder, no $30k — build it live”</text>
-  <text x="22" y="721" font-size="12.5" fill="#37455A">Channel — YouTube + LinkedIn build-alongs</text>
-  <text x="22" y="738" font-size="12.5" fill="#37455A">Offer — guided build path + DFY escape hatch</text>
-  <rect x="22" y="756" width="340" height="34" rx="7" fill="#EFF3F8"/>
-  <text x="36" y="778" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#55627A">SERVE VIA ▸ Guided build / DFY ↗</text>
-</g>
-<g transform="translate(856,150)">
-  <rect width="384" height="806" rx="10" fill="#FBFDFE" stroke="#E1E7EF" stroke-width="1.5"/>
-  <rect width="384" height="6" rx="3" fill="#AEB9C7"/>
-  <text x="22" y="38" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#8A97A8" letter-spacing="2">▲ 03 · TERTIARY</text>
-  <text x="22" y="74" font-size="22" font-weight="700" fill="#0C1B2A">Owner Dave, 52</text>
-  <text x="22" y="98" font-size="13" fill="#6C7A8C">SMB owner, one costly bottleneck</text>
-  <line x1="22" y1="114" x2="362" y2="114" stroke="#E7ECF2"/>
-  <text x="22" y="140" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
-  <text x="22" y="159" font-size="12.5" fill="#37455A">Owner-operator (trades/services), 5–50 staff,</text>
-  <text x="22" y="176" font-size="12.5" fill="#37455A">real revenue, time-poor, delegates.</text>
-  <text x="22" y="193" font-size="12.5" fill="#37455A">Low tech comfort. Budget = business expense.</text>
-  <text x="22" y="223" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
-  <text x="22" y="242" font-size="12.5" fill="#37455A">Functional — save time / make money</text>
-  <text x="22" y="259" font-size="12.5" fill="#37455A">Emotional — don’t get left behind</text>
-  <text x="22" y="276" font-size="12.5" fill="#37455A">Social — be seen as sharp, ahead</text>
-  <text x="22" y="306" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
-  <text x="22" y="325" font-size="12.5" fill="#37455A">A manual bottleneck quietly bleeds money;</text>
-  <text x="22" y="342" font-size="12.5" fill="#37455A">he can’t tell real AI from hype, and has no time.</text>
-  <text x="22" y="372" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CURRENT ALTERNATIVE</text>
-  <text x="22" y="391" font-size="12.5" fill="#37455A">Hire staff; shelfware SaaS; a pricey ‘AI</text>
-  <text x="22" y="408" font-size="12.5" fill="#37455A">consultant’; or nothing at all.</text>
-  <text x="22" y="438" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">THEIR LANGUAGE</text>
-  <text x="22" y="457" font-size="12.5" font-style="italic" fill="#6B7789">“I should use AI — don’t know where to start.”</text>
-  <text x="22" y="474" font-size="12.5" font-style="italic" fill="#6B7789">“Will this actually make me money?”</text>
-  <text x="22" y="504" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
-  <text x="22" y="523" font-size="12.5" fill="#0E8FA6">▸ Lead: industry FB groups + YouTube</text>
-  <text x="22" y="540" font-size="12.5" fill="#37455A">Hidden gems: trade-specific groups / assns</text>
-  <text x="22" y="570" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ANTI-FIT</text>
-  <text x="22" y="589" font-size="12.5" fill="#37455A">Builders · founders learning to build · enterprise</text>
-  <text x="22" y="619" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">RISKIEST ASSUMPTION</text>
-  <text x="22" y="638" font-size="12.5" fill="#37455A">Buys a done outcome, not a membership —</text>
-  <text x="22" y="655" font-size="12.5" fill="#37455A">test a per-vertical tool: one-time → sub.</text>
-  <text x="22" y="685" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">THE 3 MOVES</text>
-  <text x="22" y="704" font-size="12.5" fill="#37455A">Msg — “AI that fixes X and pays for itself”</text>
-  <text x="22" y="721" font-size="12.5" fill="#37455A">Channel — industry FB + YouTube, per vertical</text>
-  <text x="22" y="738" font-size="12.5" fill="#37455A">Offer — à-la-carte tool → subscription</text>
-  <rect x="22" y="756" width="340" height="34" rx="7" fill="#EFF3F8"/>
-  <text x="36" y="778" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#55627A">SERVE VIA ▸ À-la-carte tools ↗</text>
-</g>
-<text x="48" y="984" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#93A0B0">// one funnel doesn’t fit all three — build the tech, then sell it</text>
-<text x="1232" y="984" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#0E8FA6">scalewithme ↗</text>
+<text x="1600" y="146" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="13" fill="#0E8FA6" letter-spacing="1">SCALE ↗</text>
+<rect x="40" y="150" width="382" height="520" rx="10" fill="#FBFDFE" stroke="#12B5CE" stroke-width="1.8"/>
+<rect x="40" y="150" width="382" height="6" rx="3" fill="#12B5CE"/>
+<text x="62" y="186" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#0E8FA6" letter-spacing="2">▲ 01 · PRIMARY</text>
+<text x="62" y="222" font-size="22" font-weight="700" fill="#0C1B2A">Reset Rachel, 43</text>
+<text x="62" y="245" font-size="13" fill="#6C7A8C">Laid off when AI automated her function</text>
+<line x1="62" y1="262" x2="400" y2="262" stroke="#E7ECF2"/>
+<text x="62" y="288" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
+<text x="62" y="306" font-size="12.5" fill="#37455A">15-yr marketing/ops pro; severance</text>
+<text x="62" y="323" font-size="12.5" fill="#37455A">runway. Low tech, AI-anxious.</text>
+<text x="62" y="353" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
+<text x="62" y="371" font-size="12.5" fill="#37455A">Replace income fast, on her own terms</text>
+<text x="62" y="388" font-size="12.5" fill="#37455A">Regain agency after the layoff</text>
+<text x="62" y="405" font-size="12.5" fill="#37455A">Be seen as adapted, not replaced</text>
+<text x="62" y="435" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
+<text x="62" y="453" font-size="12.5" fill="#37455A">Deep expertise + urgency, but no path</text>
+<text x="62" y="470" font-size="12.5" fill="#37455A">to turn it into income she owns.</text>
+<text x="62" y="500" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
+<text x="62" y="518" font-size="12.5" fill="#0E8FA6">▸ LinkedIn “open to work” + r/layoffs</text>
+<rect x="62" y="624" width="338" height="34" rx="7" fill="#E2F6FA"/>
+<text x="76" y="646" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#0B7E92">SERVE VIA ▸ Free assessment → 90-day program ↗</text>
+<rect x="446" y="150" width="382" height="520" rx="10" fill="#FBFDFE" stroke="#E1E7EF" stroke-width="1.5"/>
+<rect x="446" y="150" width="382" height="6" rx="3" fill="#C6CFDB"/>
+<text x="468" y="186" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#8A97A8" letter-spacing="2">▲ 02 · SECONDARY</text>
+<text x="468" y="222" font-size="22" font-weight="700" fill="#0C1B2A">Shipping Sam, 32</text>
+<text x="468" y="245" font-size="13" fill="#6C7A8C">Technical builder who can’t sell</text>
+<line x1="468" y1="262" x2="806" y2="262" stroke="#E7ECF2"/>
+<text x="468" y="288" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
+<text x="468" y="306" font-size="12.5" fill="#37455A">Self-taught full-stack; ships a</text>
+<text x="468" y="323" font-size="12.5" fill="#37455A">micro-SaaS at night.</text>
+<text x="468" y="353" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
+<text x="468" y="371" font-size="12.5" fill="#37455A">First 10 paying customers</text>
+<text x="468" y="388" font-size="12.5" fill="#37455A">Feel legitimate, not a hobbyist</text>
+<text x="468" y="405" font-size="12.5" fill="#37455A">Post a real revenue screenshot</text>
+<text x="468" y="435" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
+<text x="468" y="453" font-size="12.5" fill="#37455A">Shipped a working product, got</text>
+<text x="468" y="470" font-size="12.5" fill="#37455A">crickets — features won’t fix it.</text>
+<text x="468" y="500" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
+<text x="468" y="518" font-size="12.5" fill="#0E8FA6">▸ X #buildinpublic + r/ClaudeAI</text>
+<rect x="468" y="624" width="338" height="34" rx="7" fill="#EFF3F8"/>
+<text x="482" y="646" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#55627A">SERVE VIA ▸ Membership ↗</text>
+<rect x="852" y="150" width="382" height="520" rx="10" fill="#FBFDFE" stroke="#E1E7EF" stroke-width="1.5"/>
+<rect x="852" y="150" width="382" height="6" rx="3" fill="#C6CFDB"/>
+<text x="874" y="186" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#8A97A8" letter-spacing="2">▲ 03 · TERTIARY</text>
+<text x="874" y="222" font-size="22" font-weight="700" fill="#0C1B2A">Founder Priya, 41</text>
+<text x="874" y="245" font-size="13" fill="#6C7A8C">Non-technical, validated idea + budget</text>
+<line x1="874" y1="262" x2="1212" y2="262" stroke="#E7ECF2"/>
+<text x="874" y="288" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
+<text x="874" y="306" font-size="12.5" fill="#37455A">Ex-consultant with real budget;</text>
+<text x="874" y="323" font-size="12.5" fill="#37455A">can’t build it herself.</text>
+<text x="874" y="353" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
+<text x="874" y="371" font-size="12.5" fill="#37455A">Turn the idea into a product</text>
+<text x="874" y="388" font-size="12.5" fill="#37455A">Feel capable, not dependent</text>
+<text x="874" y="405" font-size="12.5" fill="#37455A">Be a founder who builds</text>
+<text x="874" y="435" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
+<text x="874" y="453" font-size="12.5" fill="#37455A">Has the idea and the budget, but every</text>
+<text x="874" y="470" font-size="12.5" fill="#37455A">route to “built” is costly or slow.</text>
+<text x="874" y="500" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
+<text x="874" y="518" font-size="12.5" fill="#0E8FA6">▸ YouTube (high-intent) + LinkedIn</text>
+<rect x="874" y="624" width="338" height="34" rx="7" fill="#EFF3F8"/>
+<text x="888" y="646" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#55627A">SERVE VIA ▸ Guided build / DFY ↗</text>
+<rect x="1258" y="150" width="382" height="520" rx="10" fill="#FBFDFE" stroke="#E1E7EF" stroke-width="1.5"/>
+<rect x="1258" y="150" width="382" height="6" rx="3" fill="#C6CFDB"/>
+<text x="1280" y="186" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#8A97A8" letter-spacing="2">▲ 04 · QUATERNARY</text>
+<text x="1280" y="222" font-size="22" font-weight="700" fill="#0C1B2A">Owner Dave, 52</text>
+<text x="1280" y="245" font-size="13" fill="#6C7A8C">SMB owner, one costly bottleneck</text>
+<line x1="1280" y1="262" x2="1618" y2="262" stroke="#E7ECF2"/>
+<text x="1280" y="288" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">SNAPSHOT</text>
+<text x="1280" y="306" font-size="12.5" fill="#37455A">Owner-operator, 5–50 staff,</text>
+<text x="1280" y="323" font-size="12.5" fill="#37455A">time-poor, delegates.</text>
+<text x="1280" y="353" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">JOBS TO BE DONE</text>
+<text x="1280" y="371" font-size="12.5" fill="#37455A">Save time / make money</text>
+<text x="1280" y="388" font-size="12.5" fill="#37455A">Not fall behind on AI</text>
+<text x="1280" y="405" font-size="12.5" fill="#37455A">Look sharp to peers</text>
+<text x="1280" y="435" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">ACUTE PROBLEM</text>
+<text x="1280" y="453" font-size="12.5" fill="#37455A">A manual bottleneck bleeds money;</text>
+<text x="1280" y="470" font-size="12.5" fill="#37455A">can’t tell real AI from hype.</text>
+<text x="1280" y="500" font-family="'SF Mono','Menlo',monospace" font-size="10.5" fill="#97A2B2" letter-spacing="1.5">CHANNELS</text>
+<text x="1280" y="518" font-size="12.5" fill="#0E8FA6">▸ Industry FB groups + YouTube</text>
+<rect x="1280" y="624" width="338" height="34" rx="7" fill="#EFF3F8"/>
+<text x="1294" y="646" font-family="'SF Mono','Menlo',monospace" font-size="12" fill="#55627A">SERVE VIA ▸ À-la-carte tools ↗</text>
+<text x="40" y="700" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#93A0B0">// one funnel doesn’t fit all four — build the tech, then sell it</text>
+<text x="1640" y="700" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="12.5" fill="#0E8FA6">scalewithme ↗</text>
 </svg>
